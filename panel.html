@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notime | Organize your tasks here.</title>
+    <link rel="stylesheet" href="panel.css">
+</head>
+
+  
+    <body>
+        <header>
+            <h1>Notime.</h1>
+            <p class="subtitle">Organize your tasks and keep track of your progress.</p>
+        </header>
+
+        <section class="panel">
+            <h2 id="form-heading">Add a task</h2>
+            <form id="task-form">
+                <div class="form-grid">
+                    <input id="title" type="text" placeholder="Task title" required maxlength="120">
+                    <select id="category" required>
+                        <option value="Schedules">Schedules</option>
+                        <option value="Work">Work</option>
+                        <option value="Personal">Personal</option>
+                    </select>
+                    <select id="status" required>
+                        <option value="To do">To do</option>
+                        <option value="In progress">In progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                    <input id="due-at" type="datetime-local" aria-label="Due date and time">
+                </div>
+                <div class="form-actions">
+                    <button id="save-button" type="submit">Add task</button>
+                    <button id="cancel-edit" class="secondary" type="button" hidden>Cancel</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="toolbar" aria-label="Search and filters">
+            <input id="search" type="search" placeholder="Search tasks">
+            <select id="category-filter" aria-label="Filter by category">
+                <option value="All">All categories</option>
+                <option value="Schedules">Schedules</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+            </select>
+            <select id="status-filter" aria-label="Filter by status">
+                <option value="All">All statuses</option>
+                <option value="To do">To do</option>
+                <option value="In progress">In progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+        </section>
+        <footer> <span>&copy;</span> 2026. Notime.
+            All Rights reserved. </p>
+        </footer>
+        <script src="panel.js"></script>
+    </body>
+    </html>
+    

@@ -1,0 +1,109 @@
+
+
+    :root {
+      font-family: Arial, sans-serif;
+      color: #202638;
+      background: #f4f6fb;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px;
+    }
+
+    h1 { margin-bottom: 6px; }
+    .subtitle { color: #687086; margin-top: 0; }
+
+    .panel, .task {
+      background: #fff;
+      border: 1px solid #e1e5ee;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .form-grid, .toolbar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    input, select, button {
+      font: inherit;
+      padding: 11px 12px;
+      border: 1px solid #cbd1df;
+      border-radius: 8px;
+    }
+
+    button {
+      border: 0;
+      background: #4257d6;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover { background: #3346bd; }
+    button.secondary { background: #687086; }
+    button.danger { background: #c33e4d; }
+       
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-actions, .task-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .task-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .task { margin: 0; }
+    .task h3 { margin: 0 0 8px; overflow-wrap: anywhere; }
+    .task p { color: #596176; margin: 8px 0; }
+    .meta { font-size: 0.9rem; }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 9px;
+      border-radius: 20px;
+      background: #edf0ff;
+      color: #3346bd;
+      font-size: 0.82rem;
+      margin-right: 5px;
+    }
+
+    .progress-track {
+      height: 8px;
+      background: #e8eaf0;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 12px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: #48a879;
+      transition: width 0.2s;
+    }
+
+    .summary { color: #596176; margin: 18px 0; }
+    .empty { color: #687086; text-align: center; padding: 24px; }
+    .reminder-note { color: #687086; font-size: 0.9rem; }
+
+    @media (max-width: 500px) {
+      body { padding: 20px 12px; }
+      .form-actions, .task-actions { flex-wrap: wrap; }
+    }
+  
+  
+
+  
